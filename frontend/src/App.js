@@ -25,7 +25,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <h1>문화공보부 공공데이터</h1>
+      <h2>문화공보부 공공데이터</h2>
       <Items items={cultureData} />
     </div>
   );

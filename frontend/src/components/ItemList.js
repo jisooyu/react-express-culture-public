@@ -1,14 +1,18 @@
 import React from 'react'
 
 const ItemList = (item) => {
-    const { title, description, referenceIdentifier
+    const { title, description, referenceIdentifier, url
     } = item.item
     return (
-        <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <img src={referenceIdentifier
-            } alt="NoImage" width="400" height="500" />
+        <div className='card'>
+            <div className='container'>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                {referenceIdentifier.match(/\(/) ? null : <img src={referenceIdentifier
+                } alt="NoImage" width="300" height="400" />}
+                <p></p>
+                <a href={url} target="_blank" rel="noopener noreferrer">관련 사이트</a>
+            </div>
         </div>
     )
 }

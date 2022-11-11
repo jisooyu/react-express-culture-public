@@ -11,7 +11,7 @@ const fetchData = async (callback) => {
                 params:
                 {
                     pageNo: '1',
-                    numOfRows: '30',
+                    numOfRows: '39',
                     serviceKey: serviceKey
                 },
             })

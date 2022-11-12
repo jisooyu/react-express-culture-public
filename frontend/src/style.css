@@ -20,7 +20,7 @@ body {
 .title {
   font-size: 3rem;
   text-align: center;
-  margin: 5px;
+  margin: 10px 3px;
 }
 
 .grid {
@@ -43,6 +43,11 @@ body {
 .grid-item:hover {
   transform: translateY(-0.5%);
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  height: 400px;
+  background-color: #d6e4e5;
 }
 
 .card-img {
@@ -79,7 +84,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   color: #3363ff;
-  background-color: #d8e0fd;
+  background-color: #9ed5c5;
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;

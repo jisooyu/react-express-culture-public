@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css';
+import './style.css';
 import axios from 'axios';
 import Items from './components/Items'
 
@@ -24,10 +24,10 @@ function App() {
     fetchData()
   }, [])
   return (
-    <div className="App">
-      <h2>문화공보부 공공데이터</h2>
+    <>
+      <h2 className='title'>문화공보부 공공데이터</h2>
       <Items items={cultureData} />
-    </div>
+    </>
   );
 }
 

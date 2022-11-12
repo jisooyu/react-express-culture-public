@@ -4,14 +4,15 @@ const ItemList = (item) => {
     const { title, description, referenceIdentifier, url
     } = item.item
     return (
-        <div className='card'>
-            <div className='container'>
-                <h3>{title}</h3>
-                <p>{description}</p>
-                {referenceIdentifier.match(/[()%]/) ? null : <img src={referenceIdentifier
+        <div className='grid-item'>
+            <div className='card'>
+                {referenceIdentifier.match(/[()%]/) ? null : <img className='card-img' src={referenceIdentifier
                 } alt="NoImage" width="300" height="400" />}
-                <p></p>
-                <a href={url} target="_blank" rel="noopener noreferrer">관련 사이트</a>
+                <div className='card-content'>
+                    <h4 className='card-header'>{title}</h4>
+                    <p className='card-text'>{description}</p>
+                    <button className='card-btn'> <a href={url} target="_blank" rel="noopener noreferrer" >관련 사이트</a> <span>&rarr;</span></button>
+                </div>
             </div>
         </div>
     )
